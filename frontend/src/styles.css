@@ -1,0 +1,136 @@
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: left;
+  background: #075E54;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 600px;
+  max-width: 100%;
+}
+
+.chat-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.chatbox {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+  background-color: #fff8dd;
+  margin-bottom: 10px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.user .bubble {
+  background-color: #dcf8c6;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  text-align: left;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.bot .bubble {
+  background-color: #ffffff;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  text-align: left;
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+.typing-indicator .bubble {
+  display: flex;
+  justify-content: center; /* Center the dots */
+  align-items: center; /* Vertically align the dots */
+}
+
+.dot {
+  width: 8px; /* Slightly increase the size for better visibility */
+  height: 8px;
+  background-color: #666;
+  background: radial-gradient(circle, #666, #333); /* Add a gradient for depth */
+  border-radius: 50%;
+  margin: 0 4px; /* Adjust margin for better spacing */
+  animation: dot-blink 1.4s infinite ease-in-out both; /* Ensure animation runs smoothly */
+}
+
+@keyframes dot-blink {
+  0%, 80%, 100% {
+    transform: scale(0);
+    opacity: 0.6; /* Add opacity transition */
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Optional: Add staggered animations for each dot */
+.dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0s;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background-color: #128C7E;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.input-container button:hover {
+  background-color: #128c7e5e;
+}
