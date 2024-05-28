@@ -4,6 +4,8 @@ Powered by Flask + React + OpenAI
 
 QueryBot is a web application designed for the e-learning company CodeBasics (website: [codebasics.io](https://codebasics.io/)). CodeBasics offers data-related courses and bootcamps and serves thousands of learners who utilize Discord servers and emails to ask questions. This system provides a web-based user interface for students to ask questions and receive answers.
 
+![React Frontend](https://github.com/ahmadhassan-2609/QueryBot-Web-Application/assets/163967175/b53a1732-6b91-4ed5-a126-47675411ae5c)
+
 ## **Project Highlights**
 
 - **LLM-based Q&A System:** Reduces the workload of human staff by providing automated responses to students' queries.
